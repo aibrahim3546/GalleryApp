@@ -1,9 +1,6 @@
 # Gallery App
 
-Home Screen:
-![Home Screen](./images/screenshot1.png)
-Info Screen:
-![Info Screen](./images/screenshot1.png)
+![Home Screen](./images/screenshot1.png) ![Info Screen](./images/screenshot1.png)
 
 * React-Native
 * `npm install --save react-navigation`
