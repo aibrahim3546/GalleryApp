@@ -7,10 +7,12 @@
 
 
 * React-Native
-* `npm install --save react-navigation`
 * Using dribbble API
 * Image fetched form dribble API
 * Android Device Only
+* `git clone <url>`
+* `cd GalleryApp`
+* `npm install`
 * `react-native run-android`
 * aibrahim3546@gmail.com
 * [yang@revenuemonster.my](yang@revenuemonster.my)
