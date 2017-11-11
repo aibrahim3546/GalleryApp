@@ -2,7 +2,7 @@
 
 
 
-![Home Screen](./images/screenshot1.png)  ![Info Screen](./images/screenshot2.png)  ![Info Screen](./images/screenshot3.png)
+Home Screen ![Home Screen](./images/screenshot1.png)  Shots Screen ![Shots Screen](./images/screenshot2.png) Info Screen ![Info Screen](./images/screenshot3.png)
 
 
 
