@@ -6,15 +6,16 @@ import {
   View,
   ListView,
   Image,
-  Button
+  TouchableOpacity
 } from 'react-native';
 
 
 export default class Gallery extends Component<{}> {
 
-  static navigationOptions = {
-    title: "My Gallery"
-  }
+  static navigationOptions = ({ navigation }) => ({
+      header: null,
+      title: 'Most Popular Shots',
+    });
 
   constructor(){
     super();
@@ -38,9 +39,11 @@ export default class Gallery extends Component<{}> {
   }
 
   render() {
+    const { params } = this.props.navigation.state;
     const { navigate } = this.props.navigation;
     return (
-      <View style={{backgroundColor:'#fff'}}>
+      <View style={{backgroundColor:'#e7e7e7', marginBottom:50}}>
+        <Text style={styles.imgText}>Popular Shots Right Now</Text>
         <ListView
           dataSource={this.state.dataSource}
           renderRow = {(rowData) =>
@@ -56,10 +59,19 @@ export default class Gallery extends Component<{}> {
               source = {{uri:rowData.images.normal}}
             />
             <Text style={styles.imgText}>{rowData.title}</Text>
-            <Button
-              onPress={() => navigate('Details',{userImg: rowData.user.avatar_url, name: rowData.user.name, img: rowData.images.normal, title:rowData.title, description:rowData.description, link:rowData.html_url})}
-              title="Info"
-            />
+            <TouchableOpacity
+              onPress={() => navigate('Details',{
+                userImg: rowData.user.avatar_url,
+                name: rowData.user.name,
+                img: rowData.images.normal,
+                title:rowData.title,
+                description:rowData.description,
+                link:rowData.html_url
+              })
+            }
+            >
+              <Text style={styles.info}>Info</Text>
+            </TouchableOpacity>
           </View>
         }
         />
@@ -71,9 +83,9 @@ export default class Gallery extends Component<{}> {
 
 const styles = StyleSheet.create({
   view:{
-    borderColor: 'white',
+    borderColor: '#e7e7e7',
     borderWidth: 10,
-    backgroundColor: '#e7e7e7',
+    backgroundColor: '#333333',
     borderRadius: 25
   },
   imgStyle:{
@@ -81,11 +93,11 @@ const styles = StyleSheet.create({
     height:250
   },
   imgText: {
-    backgroundColor: '#e7e7e7',
+    backgroundColor: '#333333',
     textAlign: 'center',
     fontSize: 20,
     fontWeight: '700',
-    color: '#010101',
+    color: '#e7e7e7',
     padding: 10
   },
   userImg:{
@@ -113,5 +125,16 @@ const styles = StyleSheet.create({
     borderBottomColor: '#e7e7e7',
     borderBottomWidth: 2,
     color: "#000"
+  },
+  info:{
+    fontSize:18,
+    fontWeight:'700',
+    textAlign:'center',
+    paddingTop: 5,
+    paddingBottom: 5,
+    paddingLeft:10,
+    paddingRight:10,
+    backgroundColor: '#ea4c89',
+    color:'#333333'
   }
 });

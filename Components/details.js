@@ -15,7 +15,10 @@ export default class Details extends Component<{}> {
 
   static navigationOptions = ({ navigation }) => ({
       title: 'Info',
-    });
+      headerStyle: {backgroundColor:'#333333'},
+      headerTitleStyle: {color: '#e7e7e7'},
+      headerBackTitleStyle: {color: '#e7e7e7'}
+  });
 
 
  render() {
@@ -26,11 +29,11 @@ export default class Details extends Component<{}> {
     if (htmlContent) {
       htmlContent = params.description;
     } else {
-      htmlContent = '<p>description not available</p>';
+      htmlContent = '<em>description not available</em>';
     }
 
    return (
-      <View style={{backgroundColor:'#fff', height:'100%'}}>
+      <View style={{backgroundColor:'#333333', height:'100%'}}>
         <ScrollView>
           <View style={styles.view}>
               <Image style={styles.userImg}
@@ -62,9 +65,9 @@ export default class Details extends Component<{}> {
 
 const styles = StyleSheet.create({
   view:{
-    borderColor: 'white',
+    borderColor: '#333333',
     borderWidth: 10,
-    backgroundColor: '#fff',
+    backgroundColor: '#333333',
   },
   imgStyle:{
     width:'100%',
@@ -118,6 +121,7 @@ const htmlstyles = StyleSheet.create({
     paddingTop: 10,
     paddingBottom: 10,
     fontSize:20,
-    color:'#000'
+    color:'#e7e7e7',
+    backgroundColor: '#333333'
   }
 });
