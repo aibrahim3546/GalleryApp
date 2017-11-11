@@ -17,7 +17,6 @@ export default class Details extends Component<{}> {
       title: 'Info',
       headerStyle: {backgroundColor:'#333333'},
       headerTitleStyle: {color: '#e7e7e7'},
-      headerBackTitleStyle: {color: '#e7e7e7'}
   });
 
 
@@ -118,7 +117,7 @@ const styles = StyleSheet.create({
 
 const htmlstyles = StyleSheet.create({
   p:{
-    paddingTop: 10,
+    paddingTop: 25,
     paddingBottom: 10,
     fontSize:20,
     color:'#e7e7e7',
