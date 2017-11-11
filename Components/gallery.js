@@ -58,6 +58,7 @@ export default class Gallery extends Component<{}> {
               style ={styles.imgStyle}
               source = {{uri:rowData.images.normal}}
             />
+
             <Text style={styles.imgText}>{rowData.title}</Text>
             <TouchableOpacity
               onPress={() => navigate('Details',{
@@ -135,6 +136,11 @@ const styles = StyleSheet.create({
     paddingLeft:10,
     paddingRight:10,
     backgroundColor: '#ea4c89',
-    color:'#333333'
+    color:'#333333',
+    marginBottom: 10,
+    width: '20%',
+    marginLeft:'auto',
+    marginRight: 'auto',
+    borderRadius: 5
   }
 });

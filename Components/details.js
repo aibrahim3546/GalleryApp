@@ -123,5 +123,12 @@ const htmlstyles = StyleSheet.create({
     fontSize:20,
     color:'#e7e7e7',
     backgroundColor: '#333333'
+  },
+  em:{
+    paddingTop: 10,
+    paddingBottom: 10,
+    fontSize:20,
+    color:'#e7e7e7',
+    backgroundColor: '#333333'
   }
 });

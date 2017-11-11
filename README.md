@@ -2,7 +2,7 @@
 
 
 
-![Home Screen](./images/screenshot1.png)     ![Info Screen](./images/screenshot2.png)
+![Home Screen](./images/screenshot1.png)  ![Info Screen](./images/screenshot2.png)  ![Info Screen](./images/screenshot3.png)
 
 
 
@@ -10,9 +10,10 @@
 * Using dribbble API
 * Image fetched form dribble API
 * Android Device Only
-* `git clone <url>`
-* `cd GalleryApp`
-* `npm install`
-* `react-native run-android`
+* How to run
+  1. `git clone <url>`
+  2. `cd GalleryApp`
+  3. `npm install`
+  4. `react-native run-android`
 * aibrahim3546@gmail.com
 * [yang@revenuemonster.my](yang@revenuemonster.my)
