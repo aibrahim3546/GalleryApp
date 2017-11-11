@@ -1,10 +1,6 @@
 # Gallery App
 
-
-Home Screen                              Shots Screen                               Info Screen 
 ![Home Screen](./images/screenshot1.png) ![Shots Screen](./images/screenshot2.png) ![Info Screen](./images/screenshot3.png)
-
-
 
 * React-Native
 * Using dribbble API
