@@ -21,7 +21,7 @@ export default class Gallery extends Component<{}> {
     super();
     this.state = {
       dataSource: new ListView.DataSource({rowHasChanged:(r1,r2)=> r1!=r2}),
-      link: "https://api.dribbble.com/v1/shots?access_token=37d1dae5a5d33fdd7b87e2381675bfa28d0d0c677dcb5f29781a8b93e879797e"
+      link: "https://api.dribbble.com/v1/shots?access_token=your-key-here"
     }
   }
   componentDidMount(){
